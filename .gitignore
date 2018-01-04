@@ -1,0 +1,7 @@
+*.sh
+torchNb/
+external
+*ipynb_checkpoints
+cachedir
+*.ipynb
+*.pyc
