@@ -1,0 +1,28 @@
+#################
+## Supervised Pose Regression
+#################
+nCams=3 useEuler=1 gpu=2 numTrainIter=80000 synset=2691156 name=aero_posePred_np1_euler_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 useEuler=1 gpu=2 numTrainIter=80000 synset=2958343 name=car_posePred_np1_euler_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 useEuler=1 gpu=2 numTrainIter=80000 synset=3001627 name=chair_posePred_np1_euler_nc3 th synthetic/shapenetPoseReg.lua
+
+
+#################
+## (Directly) Supervised Shape Prediction
+#################
+gpu=2 numTrainIter=80000 synset=2691156 name=aero_3dSup th synthetic/shapenet3dSup.lua
+gpu=2 numTrainIter=80000 synset=2958343 name=car_3dSup th synthetic/shapenet3dSup.lua
+gpu=2 numTrainIter=80000 synset=3001627 name=chair_3dSup th synthetic/shapenet3dSup.lua
+
+#################
+## Multi-view training data with available pose (Depth)
+#################
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=2691156 name=aero_depth_poseSup_nds80_nc3 th synthetic/shapenetPoseSup.lua
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=2958343 name=car_depth_poseSup_nds80_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=3001627 name=chair_depth_poseSup_nds80_nc3 th synthetic/shapenetPoseReg.lua
+
+#################
+## Multi-view training data with available pose (Mask)
+#################
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=2691156 name=aero_mask_poseSup_nds80_nc3 th synthetic/shapenetPoseSup.lua
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=2958343 name=car_mask_poseSup_nds80_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=3001627 name=chair_mask_poseSup_nds80_nc3 th synthetic/shapenetPoseReg.lua

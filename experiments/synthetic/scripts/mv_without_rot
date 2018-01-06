@@ -1,0 +1,13 @@
+#################
+## Depth
+#################
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=2691156 quatPriorWt=1 name=aero_depth_poseRegUnsup_nds80_np8_euler_prior1pt0_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=2958343 quatPriorWt=1 name=car_depth_poseRegUnsup_nds80_np8_euler_prior1pt0_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=depth synset=3001627 quatPriorWt=1 name=chair_depth_poseRegUnsup_nds80_np8_euler_prior1pt0_nc3 th synthetic/shapenetPoseReg.lua
+
+#################
+## Mask
+#################
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=2691156 quatPriorWt=0.1 name=aero_mask_poseRegUnsup_nds80_np8_euler_prior0pt1_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=2958343 quatPriorWt=0.1 name=car_mask_poseRegUnsup_nds80_np8_euler_prior0pt1_nc3 th synthetic/shapenetPoseReg.lua
+nCams=3 nPoses=8 useEuler=1 numDepthSamples=80 gpu=2 numTrainIter=80000 obsType=mask synset=3001627 quatPriorWt=0.1 name=chair_mask_poseRegUnsup_nds80_np8_euler_prior0pt1_nc3 th synthetic/shapenetPoseReg.lua
