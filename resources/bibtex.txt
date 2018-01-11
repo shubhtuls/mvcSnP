@@ -1,0 +1,6 @@
+@article{mvcTulsiani18,
+  title={Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction},
+  author = {Shubham Tulsiani and Alexei A. Efros and Jitendra Malik},
+  journal={arXiv},
+  year={2018}
+}
