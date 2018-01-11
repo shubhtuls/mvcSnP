@@ -3,7 +3,8 @@
 Shubham Tulsiani, Alexei A. Efros, Jitendra Malik.
 
 [Project Page](https://shubhtuls.github.io/mvcSnP/)
-![Teaser Image](https://shubhtuls.github.io/mvcSnP/resources/images/teaser.png)
+
+<img src="https://shubhtuls.github.io/mvcSnP/resources/images/teaser.png" width="60%">
 
 ## Installation
 
