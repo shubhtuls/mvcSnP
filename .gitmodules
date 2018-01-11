@@ -1,0 +1,3 @@
+[submodule "external/stn3d"]
+	path = external/stn3d
+	url = https://github.com/shubhtuls/stn3d

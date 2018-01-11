@@ -57,17 +57,21 @@ function shapeAlign:align(pred, gt, numRestarts, numIter)
         
         local quat = quatInit:clone()
         local trans = transInit:clone()
+        local err_final
         for ix=1,numIter do
             local grad, err = self:getGradient(pred, gt, {trans, quat})
             quat:add(grad[2]:clone():mul(-stepSize))
             quat:div(quat:norm())
             trans:add(grad[1]:clone():mul(-stepSize))
-            
-            if(err < errMin) and (trans:abs():max() < 0.2) then
-                errMin = err
-                bestQuat:copy(quat)
-                bestTrans:copy(trans)
+            if ix==numIter then
+                err_final = err
             end
+        end
+        if(err_final < errMin) and (trans:abs():max() < 0.2) then
+            errMin = err_final
+            bestQuat:copy(quat)
+            bestTrans:copy(trans)
+            --print(err_final, quat, trans)
         end
     end
     
