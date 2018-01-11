@@ -1,0 +1,8 @@
+# Experiments with GT pose supervision
+evalSet=test benchmarkName=pose expSetName=posepred th synthetic/evalScripts.lua | bash
+
+# Experiments with unknown rotation
+evalSet=test benchmarkName=pose expSetName=unsuprot th synthetic/evalScripts.lua | bash
+
+# Experiments with unknown rotation and translation
+evalSet=test benchmarkName=pose expSetName=unsuprottrans th synthetic/evalScripts.lua | bash

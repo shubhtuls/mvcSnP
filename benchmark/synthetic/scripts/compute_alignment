@@ -1,0 +1,7 @@
+## Scripts to perform prediction frame alignment
+
+# Experiments with unknown rotation
+benchmarkName=align expSetName=unsuprot th synthetic/evalScripts.lua
+
+# Experiments with unknown rotation and translation
+benchmarkName=align expSetName=unsuprottrans th synthetic/evalScripts.lua

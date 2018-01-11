@@ -1,0 +1,20 @@
+# Experiments with 3D supervision
+evalSet=val benchmarkName=shape expSetName=3dsup th synthetic/evalScripts.lua | bash
+evalSet=test benchmarkName=shape expSetName=3dsup th synthetic/evalScripts.lua | bash
+
+# Experiments with known pose
+evalSet=val benchmarkName=shape expSetName=posesup th synthetic/evalScripts.lua | bash
+evalSet=test benchmarkName=shape expSetName=posesup th synthetic/evalScripts.lua | bash
+
+# Experiments with unknown rotation
+evalSet=val benchmarkName=shape expSetName=unsuprot th synthetic/evalScripts.lua | bash
+evalSet=test benchmarkName=shape expSetName=unsuprot th synthetic/evalScripts.lua | bash
+
+# Experiments with unknown rotation and translation
+evalSet=val benchmarkName=shape expSetName=unsuprottrans th synthetic/evalScripts.lua | bash
+evalSet=test benchmarkName=shape expSetName=unsuprottrans th synthetic/evalScripts.lua | bash
+
+# Run a matlab script to evaluate all stored predictions
+# cd benchmark/synthetic
+# matlab -nodesktop -nosplash
+# (run from within matlab) evalShape
