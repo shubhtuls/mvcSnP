@@ -29,10 +29,13 @@ To be added soon.
 ### Citation
 If you use this code for your research, please consider citing:
 ```
-@article{mvcTulsiani18,
-  title={Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction},
-  author = {Shubham Tulsiani and Alexei A. Efros and Jitendra Malik},
-  journal={arXiv},
+@inProceedings{mvcTulsiani18,
+  title={Multi-view Consistency as Supervisory Signal
+  for Learning Shape and Pose Prediction},
+  author = {Shubham Tulsiani
+  and Alexei A. Efros
+  and Jitendra Malik},
+  booktitle={Computer Vision and Pattern Regognition (CVPR)},
   year={2018}
 }
 ```
