@@ -24,7 +24,11 @@ luarocks install json
 To train or evaluate the (trained/downloaded) models, it is first required to download the [Shapenet dataset (v1)](https://www.shapenet.org/) and [preprocess the data](docs/preprocessing.md) to compute renderings and voxelizations. Please see the detailed README files for [Training](docs/training.md) or [Evaluation](docs/evaluation.md) of models for subsequent instructions.
 
 ## Demo and Pre-trained Models
-To be added soon.
+Please check out the [interactive notebook (coming soon)](demo/demo.ipynb) which shows reconstructions using the learned models. You'll need to - 
+- Install a working implementation of torch and itorch.
+- Download the [pre-trained models (1.5GB)](https://people.eecs.berkeley.edu/~shubhtuls/cachedir/mvcSnp/shapenet.tar.gz)  and extract them to 'cachedir/snapshots/shapenet/'
+- Download [canonical frame alignments computed for pre-trained models](https://people.eecs.berkeley.edu/~shubhtuls/cachedir/mvcSnp/snet_alignments.tar.gz) and extract them to 'cachedir/alignment/shapenet/'
+- Edit the path to the blender executable in the demo script.
 
 ### Citation
 If you use this code for your research, please consider citing:
